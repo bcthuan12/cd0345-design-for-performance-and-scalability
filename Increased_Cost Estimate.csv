@@ -1,0 +1,27 @@
+﻿Estimate summary,,,,,,,,,
+Upfront cost,Monthly cost,Total 12 months cost,Currency,,,,,,
+0,19718.53,236622.36,USD,,,,,,
+,,* Includes upfront cost,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+Detailed Estimate,,,,,,,,,
+Group hierarchy,Region,Description,Service,Upfront,Monthly,First 12 months total,Currency,Status,Configuration summary
+My Estimate,US East (N. Virginia),,Amazon CloudFront,0,0,0,USD,,
+My Estimate,US East (N. Virginia),,S3 Standard,0,235.52,2826.24,USD,,S3 Standard storage (10 TB per month)
+My Estimate,US East (N. Virginia),,Data Transfer,0,0,0,USD,,
+My Estimate,US East (N. Virginia),,Amazon RDS for PostgreSQL,0,14544.24,174530.88,USD,,"Storage amount (100 GB), Storage volume (General Purpose SSD (gp2)), Nodes (2), Instance Type (db.m5.12xlarge), Utilization (On-Demand only) (100 %Utilized/Month), Deployment Option (Multi-AZ), Pricing Model (OnDemand), Additional backup storage (10 TB)"
+My Estimate,US East (N. Virginia),,Amazon EC2 ,0,1405.104,16861.25,USD,,"Tenancy (Shared Instances), Operating system (Linux), Workload (Consistent, Number of instances: 12), Advance EC2 instance (t2.2xlarge), Pricing strategy ( 3yr  No Upfront), Enable monitoring (disabled), DT Inbound: Not selected (0 TB per month), DT Outbound: Not selected (0 TB per month), DT Intra-Region: (0 TB per month)"
+My Estimate,US East (N. Virginia),,Application Load Balancer,0,102.93,1235.16,USD,,Number of Application Load Balancers (2)
+My Estimate,US East (N. Virginia),,VPN Connection,0,1825,21900,USD,,"Working days per month (22), Number of Site-to-Site VPN Connections (50)"
+My Estimate,US East (N. Virginia),,Network Address Translation (NAT) Gateway,0,33.3,399.6,USD,,Number of NAT Gateways (1)
+My Estimate,US East (N. Virginia),,Gateway Load Balancer,0,71.18,854.16,USD,,"Number of Availability Zones that Gateway Load Balancer is deployed to (1), Number of Gateway Load Balancer Endpoints (1), Total processed bytes (10 GB per hour), Average number of new connections/flows (5 per second), Average connection/flow duration (5 seconds)"
+My Estimate,US East (N. Virginia),,Amazon CloudWatch,0,1501.259,18015.11,USD,,"Number of Metrics (includes detailed and custom metrics) (5000), Standard Logs: Data Ingested (1 GB), Logs Delivered to CloudWatch Logs: Data Ingested (1 GB), Logs Delivered to S3: Data Ingested (1 GB)"
+,,,,,,,,,
+Rationale:,,,,,,,,,
+Changes been made:,,,,,,,,,
+Increased with two ec2 instances, upgrade its type to t2.2xlarge,,,,,,,,
+RDS service increased to db.m5.12xlarge. Increased  backup storage to 10 TB. It provides increased resilience and redundancy with its multi-region deployment.,,,,,,,,,
+Added Amazon CloudWatch, to collect various logs and notify me during any alarms.,,,,,,,,
+,,,,,,,,,
+Acknowledgement,,,,,,,,,
+"* AWS Pricing Calculator provides only an estimate of your AWS fees and doesn't include any taxes that might apply. Your actual fees depend on a variety of factors, including your actual usage of AWS services.",,,,,,,,,
